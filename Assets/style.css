@@ -1,0 +1,401 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Fondo */
+
+.body-index {
+  width: 100%;
+  height: auto;
+}
+
+.index-header {
+  background-color: black;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+/* Animation */
+
+.nav-header {
+  animation: nav-header 2s ease-in-out 2s 1 normal forwards;
+}
+
+@keyframes nav-header {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+
+  10% {
+    transform: rotate(8deg);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg);
+  }
+
+  80% {
+    transform: rotate(-8deg);
+  }
+
+  90% {
+    transform: rotate(8deg);
+  }
+}
+
+/* Barra de navegacion */
+
+.index-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.a-index {
+  text-decoration: none;
+  color: #e8d9e4;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-right: 3rem;
+}
+
+/* Informacion Principal */
+
+.index-container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./imagenes/City\ nighty.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.description {
+  width: 60%;
+}
+.description h1 {
+  font-size: 2.5rem;
+  color: #e8d9e4;
+  margin-top: 1rem;
+}
+
+.description h2 {
+  font-size: 1.5rem;
+  color: #e8d9e4;
+  margin-top: 1rem;
+  color: #e8d9e4;
+}
+
+h3 {
+  display: flex;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #16101c;
+  justify-content: center;
+}
+.date {
+  margin-bottom: 2rem;
+}
+.date p {
+  width: 40%;
+  font-size: 1rem;
+  background-color: #16101c;
+  margin-top: 1rem;
+  color: whitesmoke;
+  opacity: 0.7;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.blogs-button {
+  text-decoration: none;
+  background-color: #de2ab1;
+  color: whitesmoke;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+/* Informacion de contacto */
+
+.index-footer {
+  height: 10vh;
+  background-color: #16101c;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.foot {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-footer {
+  width: 2rem;
+  margin-left: 2rem;
+}
+
+/* CSS Blogs*/
+
+.body-blogs {
+  width: 100%;
+  height: 100vh;
+}
+
+.header-blogs {
+  height: 10vh;
+  display: flex;
+  background-color: #151d6e;
+  justify-content: center;
+  align-items: end;
+}
+
+/* Barra de navegacion */
+
+.nav-blogs {
+  display: flex;
+  flex-direction: row;
+}
+
+.a-blogs {
+  text-decoration: none;
+  color: #e8d9e4;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-right: 5rem;
+}
+
+/* Contenido Principal */
+
+.blogs-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./imagenes/Ocean\ in\ the\ night.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blogs-container h1 {
+  color: whitesmoke;
+  margin-bottom: 3rem;
+}
+
+.grid {
+  width: 90%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20%;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.cubo {
+  width: 100%;
+  height: 100%;
+  color: #f28d01;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+  border-radius: 30px;
+}
+
+.cubo-1 {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cubo-2 {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cubo-3 {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cubo-4 {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cubo-5 {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cubo-6 {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-blogs {
+  width: 140px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.text-blogs {
+  padding: 5px;
+  margin: 5px;
+}
+
+.button-blogs {
+  text-decoration: none;
+  background-color: #f44336;
+  color: #ffeb3b;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* Footer Blogs */
+
+.foot-blogs {
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  background-color: #16101c;
+}
+
+/* Post CSS */
+
+.post-body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+/* Barra de navegacion */
+
+.post-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.post-a {
+  text-decoration: none;
+  color: #e8d9e4;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-right: 5rem;
+}
+
+/* Contenido Principal */
+
+.post-main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  padding: 1rem;
+}
+
+.post-title {
+  height: 5vh;
+  margin-left: 4.5rem;
+  margin-bottom: 2rem;
+}
+.section-aside-container {
+  display: flex;
+}
+.post-section {
+  width: 80%;
+
+  margin-left: 5%;
+  border-radius: 10px;
+}
+
+.post-picture {
+  width: 100%;
+  height: 50vh;
+}
+
+.post-t {
+  margin-top: 20px;
+}
+
+.post-aside {
+  width: 20%;
+
+  padding: 10px;
+  float: left;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.post-h2 {
+  padding-left: 5px;
+  height: 5%;
+}
+
+.post-p {
+  width: 10%;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.post-list {
+  height: 50%;
+}
+
+.post-unlist {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: column;
+}
+
+.post-b {
+  font-size: 1.1rem;
+  margin: 10px;
+}
+
+/* Responsive desktop */
+
+@media (min-width: 1519px) {
+  .body-blogs {
+    width: 100%;
+    background-image: url();
+  }
+}
